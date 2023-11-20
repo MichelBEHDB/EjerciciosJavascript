@@ -1,0 +1,33 @@
+#album-view img {
+    border: 1px solid slategray;
+    margin: 5px;
+    padding: 5px;
+    height: 150px;
+}
+
+#modal-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(0, 0, 0, 0.9);
+    z-index: 2;
+    display: flex;
+    /*justifica contenido al centro*/
+    justify-content: center;
+    align-items: center;
+}
+
+/*c) Los tamaños de las imágenes se limitan a la altura y la anchura del padre, #modal-view (cuya
+altura y anchura se ajustan al tamaño de la ventana gráfica)*/
+#modal-view img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#modal-view.hidden {
+    display: none;
+
+}
